@@ -20,16 +20,9 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`deve possuir um titúlo 'tour-of-heroes'`, () => {
+  it(`deve possuir um titulo 'Tour of Heroes'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('tour-of-heroes');
-  });
-
-  it('deve renderizar o titulo', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('tour-of-heroes app is running!');
+    expect(app.title).toEqual('Tour of Heroes');
   });
 });
